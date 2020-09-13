@@ -1,7 +1,7 @@
 all:			bsq_main
 
 bsq_main:	check_data.o create_struct.o search_square.o print_matrix.o free_memory.o main.c ft_atoi.o
-				gcc -Wall -Wextra -Werror -o bsq_main check_data.o create_struct.o search_square.o print_matrix.o free_memory.o ft_atoi.o main.c bsq_header.h
+				gcc -Wall -Wextra -Werror -o bsq_main check_data.o create_struct.o search_square.o print_matrix.o free_memory.o ft_atoi.o main.c
 
 check_data.o: check_data.c
 				gcc -Wall -Wextra -Werror -c check_data.c bsq_header.h
